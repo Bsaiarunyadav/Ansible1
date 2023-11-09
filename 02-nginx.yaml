@@ -1,5 +1,5 @@
 - name: Install and Run nginx #name is not mandatory but it is for the best practice. 
-  Host: Mongodb
+  hosts: Mongodb
   become: yes #this will give root access
   tasks:
     - name: install nginx
