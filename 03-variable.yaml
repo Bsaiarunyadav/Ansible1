@@ -1,6 +1,15 @@
 - name: variable in ansible 
   hosts: Mongodb
+  #These are play level variables ,map
+  vars: 
+    Course: AWS DEVOPS
+    Time: 110hrs
+    Trainer: Sivakumar
   tasks: 
     - name: Print hello world
       ansible.builtin.debug:
         msg: "Hello i'm learning ansible"
+    - name: Print Variables
+      ansible.builtin.debug:
+        msg: "Hello i'm learning {{Course}} and the trainer is {{Trainer}} with time tenure of 110 hrs
+        
