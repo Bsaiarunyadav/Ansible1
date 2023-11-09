@@ -11,5 +11,4 @@
         msg: "Hello i'm learning ansible"
     - name: Print Variables
       ansible.builtin.debug:
-        msg: "Hello i'm learning {{Course}} and the trainer is {{Trainer}} with time tenure of 110 hrs
-        
+        msg: "Hello, i'm learning {{Course}}, and the trainer is {{Trainer}}, with time tenure of {{Time}}"
