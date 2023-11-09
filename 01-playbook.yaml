@@ -1,6 +1,6 @@
 #playbook
-Name: Ping the node
-hosts: Mongodb
+- name: Ping the node
+  hosts: Mongodb
 #this is list of tasks/collections/modules
 tasks:
 -name: pinging the sever 
