@@ -3,7 +3,8 @@ roboshop-us-dev-db-monogodb-01.awsdevopsjoin.online
 
 [mongodb:vars]
 MONGO_USERNAME=mongodbadmin
-MONGO_DB=categories 
+MONGO_DB=categories
+NAME=Saiarun-inventory
 
 [mysql]
 roboshop-us-dev-db-mysql-01.awsdevopsjoin.online
