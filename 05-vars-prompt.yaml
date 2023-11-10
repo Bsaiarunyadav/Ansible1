@@ -1,0 +1,15 @@
+# This is used for the security purposes , which are confidential.
+- name: variables to prompt
+  hosts: localhost
+  vars_prompt:
+  - name: USERNAME
+    prompt: please enter your username
+    private: false #You can see the value entered on screen
+  - name: PASSWORD
+    prompt: please enter your username
+    private: True #You can't see the value entered on screen
+  tasks:
+  - - name: printing variables
+    ansible.builtin.debug:
+      msg: "Hello, please enter USERNAME: {{USERNAME}}, and the PASSWORD: {{PASSWORD}}"
+
