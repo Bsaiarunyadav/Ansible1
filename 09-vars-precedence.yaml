@@ -4,7 +4,7 @@
     NAME: Sai arun yadav-playlevel
   vars_files:
     - variable.yaml
-  vars_prompt
+  vars_prompt:
     - name: NAME
       prompt: please enter your username
       private: false
