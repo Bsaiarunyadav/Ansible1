@@ -9,7 +9,7 @@
     prompt: please enter your username
     private: True #You can't see the value entered on screen
   tasks:
-  - - name: printing variables
+  - name: printing variables
     ansible.builtin.debug:
       msg: "Hello, please enter USERNAME: {{USERNAME}}, and the PASSWORD: {{PASSWORD}}"
 
