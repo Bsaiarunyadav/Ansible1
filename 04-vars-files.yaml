@@ -3,6 +3,6 @@
   vars_files: 
   - variables.yaml
   tasks:
-  - name: printing variables
+  - Name: printing variables
     ansible.builtin.debug:
       msg: "Hello, i'm learning {{NAME}}, and the trainer is {{TRAINER}}, with time tenure of {{DURATION}}"
