@@ -35,10 +35,3 @@
 
 
 
-
-
-# genraly we know what is inheritence.
-# Father ----> earned some property
-#children ---> by default they inherit the property
-# chilren can change the value of property
-# You inherit the values from parent, as a children you can override the values, you can add the values.
