@@ -6,7 +6,7 @@
     prompt: please enter your username
     private: false #You can see the value entered on screen
   - name: PASSWORD
-    prompt: please enter your username
+    prompt: please enter your password
     private: True #You can't see the value entered on screen
   tasks:
   - name: printing variables
