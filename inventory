@@ -5,8 +5,6 @@ roboshop-us-dev-db-monogodb-01.awsdevopsjoin.online
 MONGO_USERNAME=mongodbadmin
 MONGO_DB=categories 
 
-
-
 [mysql]
 roboshop-us-dev-db-mysql-01.awsdevopsjoin.online
 roboshop-us-dev-db-mysql-02.awsdevopsjoin.online
