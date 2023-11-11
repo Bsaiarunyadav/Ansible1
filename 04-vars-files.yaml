@@ -6,3 +6,5 @@
   - name: printing variables
     ansible.builtin.debug:
       msg: "Hello, i'm learning {{NAME}}, and the trainer is {{TRAINER}}, with time tenure of {{DURATION}}"
+
+# We are able to refer the variables form files and another method is (05-vars-prompt.yaml)

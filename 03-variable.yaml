@@ -12,3 +12,6 @@
     - name: Print Variables
       ansible.builtin.debug:
         msg: "Hello, i'm learning {{Course}}, and the trainer is {{Trainer}}, with time tenure of {{Time}}"
+        
+
+#HERE THere is one disavantage sometimes we acceidently do some mistakes. to remove that mistake we have (04-vars-files.yaml)
