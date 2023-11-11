@@ -14,6 +14,11 @@
   - name: print exit status 
     ansible.builtin.debug:
       msg: "{{output.rc}}" #-----------> rc Means EXIT STATUS IN ANSIBLE (Here we need RC in the whole output mentioned below)
+   # here we got it rc as 1 now BAING UPON THIS WE WILL WRITE A CODITION.
+  - name: create user roboshop # In ansible the condition will be as "WHEN"
+    ansible.builtin.user: # if the user doesn't exist then this will run
+      name: roboshop
+    when: output.rc != 0
 
 
 
