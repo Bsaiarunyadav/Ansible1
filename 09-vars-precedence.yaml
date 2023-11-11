@@ -3,14 +3,14 @@
   vars:
     NAME: Saiarunyadav-playlevel
   vars_files:
-    - variable.yaml
+  - variable.yaml
   vars_prompt:
-    - name: NAME
-      prompt: please enter your Trainer name
-      private: false
+  - name: NAME
+    prompt: please enter your Trainer name
+    private: false
   tasks: 
--   name: variable at task level 
-      vars:
-        NAME: saiarun-tasklevel
-      ansible.bulitin.debug:
-        msg: "Trainer name is: {{NAME}}"
+  - name: variable at task level 
+    vars:
+      NAME: saiarun-tasklevel
+    ansible.bulitin.debug:
+      msg: "Trainer name is: {{NAME}}"
