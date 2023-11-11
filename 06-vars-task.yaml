@@ -8,7 +8,7 @@
   - name: printing variables
     ansible.builtin.debug:
       msg: "MONEY: {{money}}, LAND: {{land}}"
-  - name: Inheriting the values from parent
+  - name: Inheriting the values from play and add and overridex
     vars: #these are task level vars
     - money: "1999 rs"
       houses: "10000 houses"

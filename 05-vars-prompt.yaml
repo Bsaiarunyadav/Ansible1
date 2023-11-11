@@ -13,3 +13,6 @@
     ansible.builtin.debug:
       msg: "username: {{USERNAME}}, password: {{PASSWORD}}"
 
+
+# Now we will see how to use vars at task level till now we have seen play level vars (06-vars-task.yaml)
+
