@@ -10,11 +10,11 @@
   - AGE: 30 #Number 
   - NAME: "Saiarun" #string
   - isDevOps: true #BOOLEAN (True or false)
-  - skills:
+  - skills: #list
     - Devops
     - AWS
     - docker
-  - EXPERIENCE:
+  - EXPERIENCE: #map
       devops: 7
       AWS: 5
       docker: 4
@@ -28,6 +28,6 @@
   - name: print boolean variable
     ansible.builtin.debug:
       msg: "{{isDevOps}}"
-  - name: print skills
+  - name: print List variable
     ansible.builtin.debug:
       msg: "{{skills}}"
