@@ -11,6 +11,9 @@
   - name: print the command output 
     ansible.builtin.debug:
       msg: "output is: {{output}}"
+  - name: print exit status 
+    ansible.builtin.debug:
+      msg: "{{output.rc}}" #-----------> rc Means EXIT STATUS IN ANSIBLE (Here we need RC in the whole output mentioned below)
 
 
 
@@ -20,3 +23,19 @@
 
 
 # NOTE :- Ansible will default comes out if the task is fail.
+
+
+
+    # {'changed': True,
+    #  'stdout': '',
+    #   'stderr': 'id: ‘roboshop’: no such user',
+    #    'rc': 1, --------------------------------------------------------------------> "EXIT STATUS"
+    #  'cmd': ['id', 'roboshop'],
+    #   'start': '2023-11-11 15:44:28.010677', 
+    #   'end': '2023-11-11 15:44:28.017786',
+    #    'delta': '0:00:00.007109',
+    #     'failed': True,
+    #      'msg': 'non-zero return code',
+    #       'stdout_lines': [],
+    #        'stderr_lines': ['id: ‘roboshop’: no such user']}"
+
