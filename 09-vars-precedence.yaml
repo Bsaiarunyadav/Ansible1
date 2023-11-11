@@ -9,8 +9,8 @@
     prompt: please enter your Trainer name
     private: false
   tasks: 
-  - Name: variable at task level 
+  - name: variable at task level 
     vars:
       NAME: saiarun-tasklevel
-    ansible.bulitin.debug:
+    ansible.builtin.debug:
       msg: "Trainer name is: {{NAME}}"
