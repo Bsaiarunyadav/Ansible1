@@ -1,9 +1,9 @@
 - name: simple condition
   hosts: localhost
   vars:
-    NAME: DevOps1
+    NAME: DevOps1 # If the name is not DevOps it will not run EX: DevOps1 and try
   tasks:
-  - name: run this if name is DevOps
+  - name: run this if name is DevOps  #This module will run 
     ansible.builtin.debug:
       msg: "Hello {{NAME}}"
-    when: NAME == "DevOps"
+    when: NAME == "DevOps"  #if this expression is true then ^ (NAME)
