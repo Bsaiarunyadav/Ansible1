@@ -9,7 +9,7 @@
       prompt: please enter your Trainer name
       private: false
   tasks: 
-  - name: variable at task level 
+-   name: variable at task level 
       vars:
         NAME: saiarun-tasklevel
       ansible.bulitin.debug:

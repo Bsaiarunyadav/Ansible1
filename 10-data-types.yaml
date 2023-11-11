@@ -1,0 +1,12 @@
+#Data types genrally have
+# Number 
+# string 
+# list
+# mao
+# boolean 
+- name: ansible variable data types
+  hosts: local host
+  vars:
+  - AGE: 30 #Number 
+  - NAME: "Saiarun" #string
+  - isDevOps: true 
