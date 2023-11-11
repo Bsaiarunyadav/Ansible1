@@ -14,3 +14,13 @@
       NAME: saiarun-tasklevel
     ansible.builtin.debug:
       msg: "Trainer name is: {{NAME}}"
+
+
+# preferences
+# 1. command line variable
+# 2. task level
+# 3. Vars_files
+# 4. vars_Promt
+# 5. Playlevel
+# 6. inventory
+# 7. Roles (This is will said while discussing about the roles)
