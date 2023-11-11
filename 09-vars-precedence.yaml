@@ -12,5 +12,5 @@
   - name: variable at task level 
     vars:
       NAME: saiarun-tasklevel
-    ansible.bulitin.debug:
+      ansible.bulitin.debug:
       msg: "Trainer name is: {{NAME}}"
