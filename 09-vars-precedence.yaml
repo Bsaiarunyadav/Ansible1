@@ -10,7 +10,7 @@
       private: false
   tasks: 
   - name: variable at task level 
-    vars:
-      NAME: saiarun-tasklevel
+      vars:
+        NAME: saiarun-tasklevel
       ansible.bulitin.debug:
-      msg: "Trainer name is: {{NAME}}"
+        msg: "Trainer name is: {{NAME}}"
