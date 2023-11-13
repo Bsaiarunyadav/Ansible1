@@ -2,12 +2,12 @@
 
 - name: assignment
   hosts: localhost
-  vars: 
-    USERNAME: Saiarun 
-tasks:
-  - name: run this if name is DevOps  #This module will run 
-    ansible.builtin.debug:
-      msg: "Hello {{USERNAME}}"
-    when: USERNAME == "Saiarun" 
+  vars:
+    USERNAME: Saiarun
+  tasks:
+    - name: run this if name is DevOps
+      ansible.builtin.debug:
+        msg: Hello {{USERNAME}}
+      when: USERNAME == "Saiarun"
 
   
