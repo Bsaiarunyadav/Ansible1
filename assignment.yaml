@@ -3,7 +3,7 @@
 - name: assignment
   hosts: localhost
   vars: 
-  - USERNAME: Saiarun 
+    USERNAME: Saiarun 
 tasks:
   - name: run this if name is DevOps  #This module will run 
     ansible.builtin.debug:
