@@ -1,0 +1,17 @@
+# in previous loops we checked how to install the packages using loop
+# But now it nned to some of the packages to be installed and some to be removed 
+
+- name: install the packages
+  hosts: mongodb 
+  become: yes # to become root access
+  tasks:
+  - name: install package
+    ansible.builtin.yum:
+      name: "{{item}}"
+      state: "{{item.state}}" # here this will work as (item :-Name and state: state ) in below line of loop.
+      # List of map
+    loop:
+    - {name: 'nginx' , state: 'absent'}
+    - {name: 'postfix' , state: 'installed'}
+    - {name: 'cyrus-sasl-plain' , state: 'installed'}
+    - {name: 'mailx' , state: 'absent'}
