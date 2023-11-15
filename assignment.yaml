@@ -5,7 +5,7 @@
   vars:
     USERNAME: Saiarun
   tasks:
-    - name: run this if name is DevOps
+    - name: run this if name is Saiarun
       ansible.builtin.debug:
         msg: Hello {{USERNAME}}
       when: USERNAME == "Saiarun"

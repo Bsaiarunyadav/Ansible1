@@ -1,0 +1,22 @@
+- name: loops example 
+  hosts: local host #You no need to give username and password through ansible command line 
+  tasks:
+  - name: print the names
+    ansible.builtin.debug:
+      msg: "HELLO"
+    loop:
+    - sai arun 
+    - abhinay
+    - vineeth
+    - babloo
+
+
+# syntax  of loop is "loop:"
+# Here we will get the names one by one as mentioned in order
+# How the loop will work it will use the command called "{{item}}"
+# {{item}} ----> 1st list in item 
+# 2 list in item 
+# 3 list in item .........
+
+
+
