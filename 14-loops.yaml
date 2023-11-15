@@ -1,0 +1,11 @@
+- name: install the packages
+  hosts: localhost
+  become: yes # to become root access
+  tasks:
+  - name: install package
+    ansible.bulitin.yum:
+      name: "{{item}}"
+      state: installed 
+    loop:
+    - nginx
+    - postmap
