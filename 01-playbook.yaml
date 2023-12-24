@@ -1,9 +1,11 @@
 #playbook
 - name: Ping the node #What is the name of the playbook
-  hosts: Mongodb #which host we are connecting (Saved inthe inventory)
+  hosts: Mongodb #which host we are connecting (Saved in the inventory)
 #this is list of tasks/collections/modules
   tasks: #What are we doing 
   - name: pinging the sever #Name of the task to check the ping .
       #this is map
     ansible.builtin.ping:
-    #command to check the ping .
+    #command to check the ping . 
+
+     
